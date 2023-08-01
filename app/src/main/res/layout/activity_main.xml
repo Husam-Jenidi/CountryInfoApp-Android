@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="215dp"
+        android:layout_height="180dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:layout_width="345dp"
+        android:layout_height="49dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <RadioButton
+            android:id="@+id/IT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickFlag"
+            android:text="Italy" />
+
+        <RadioButton
+            android:id="@+id/SP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickFlag"
+            android:text="Spain" />
+
+        <RadioButton
+            android:id="@+id/UK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickFlag"
+            android:text="United Kingdom" />
+
+        <RadioButton
+            android:id="@+id/FR"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:onClick="clickFlag"
+            android:text="France" />
+    </RadioGroup>
+
+    <ScrollView
+        android:layout_width="341dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.295">
+
+        <TextView
+            android:id="@+id/longtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="choose a country" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
